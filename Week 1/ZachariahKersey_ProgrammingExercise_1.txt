@@ -1,0 +1,52 @@
+# Technical Design Document: ZachariahKersey_ProgrammingExercise_1
+
+# Name: Zachariah Kersey
+# Date: January 15, 2026
+# Program Description: Handles the sale of 20 tickets
+
+## Function: processOrder
+Handles the process of selling tickets purchased.
+
+Parameters:
+    None
+
+Variables:
+    tickets (int): The total number of tickets available for sale
+    buyers (int): The number of buyers
+    ticketsPurchased (int): The number of tickets requested for purchase
+
+Logic:
+    1. Initialize tickets for sale and number of buyers.
+    2. Print the number of tickets available for purchase upon first run.
+    3. Loop through prompting for purchasing tickets until none are left.
+    4. Prompt for a number of tickets to purchase.
+    5. Validate the request number of tickets across various criteria.
+    6. Update the number of tickets remaining.
+    7. Increase the numbers of buyers by 1.
+    8. Print the new number of tickets remaining.
+    9. Upon no tickets remaining, print the total number of buyers.
+
+Return:
+    None
+
+## Function: validatePurchase
+Validates that the requested amount of tickets is valid.
+
+Parameters:
+    totalTickets (str): The total number of tickets available for sale
+    ticketsPurchased (int): The number of tickets requested for purchase
+
+Variables:
+    totalTickets (int): The total number of tickets available for sale
+
+Logic:
+    1. Convert ticketsPurchased to an integer.
+    2. Check if ticketsPurchased is a positive integer.
+    3. Check if ticketsPurchased is below 4-ticket limit.
+    4. Check if there are enough tickets to sell the requested amount.
+    5. Return True to indicate that we can buy the tickets.
+
+Returns:
+    True or False.
+
+#Link to your repository: https://github.com/melichs?tab=repositories
