@@ -7,7 +7,7 @@ with open("ZachariahKersey_ProgrammingExercise_1.txt", "w") as doc:
               f"{ZachariahKersey_ProgrammingExercise_1.__name__}\n\n")
     #replace with your name, the date, and the description of the program
     doc.write(f"# Name: Zachariah Kersey\n")
-    doc.write(f"# Date: January 15, 2026\n")
+    doc.write(f"# Date: January 17, 2026\n")
     doc.write(f"# Program Description: Handles the sale of 20 tickets\n\n")
 
     #replace docstring_example with your assignment name 

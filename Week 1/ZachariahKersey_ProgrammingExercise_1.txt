@@ -1,7 +1,7 @@
 # Technical Design Document: ZachariahKersey_ProgrammingExercise_1
 
 # Name: Zachariah Kersey
-# Date: January 15, 2026
+# Date: January 17, 2026
 # Program Description: Handles the sale of 20 tickets
 
 ## Function: processOrder
@@ -49,4 +49,4 @@ Logic:
 Returns:
     True or False.
 
-#Link to your repository: https://github.com/melichs?tab=repositories
+#Link to your repository: https://github.com/Z-Money?tab=repositories
