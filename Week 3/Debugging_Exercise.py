@@ -20,15 +20,20 @@ def main():
     ]
 
     for product in products:
+        # Convert values to float to prep for future functions
         try:
             price = float(product["price"])
-        except TypeError:
+        # Print out error, skipping past object without ending program
+        except ValueError:
             print(f"Invalid price value type: {product['name']}")
+            print(f"Skipping past {product['name']} due to error\n")
             continue
         try:
             discount_rate = float(product["discount_rate"])
-        except TypeError:
+        # Print out error, skipping past object without ending program
+        except ValueError:
             print(f"Invalid discount rate type: {product['name']}")
+            print(f"Skipping past {product['name']} due to error\n")
             continue
 
         discount_amount = calculate_discount(price, discount_rate)
