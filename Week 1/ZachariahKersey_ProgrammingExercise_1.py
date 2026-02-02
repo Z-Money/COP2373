@@ -76,7 +76,7 @@ def processOrder():
     print("Tickets remaining: " + str(tickets))
     # Repeat prompting for the purchase of tickets until none are left for sale
     while tickets > 0:
-        ticketsPurchased = input("How many tickets would you like: ")
+        ticketsPurchased = input("Enter the number of tickets to purchase: ")
         # Update the number of tickets and buyers if ticketsPurchased is valid
         if validatePurchase(tickets, ticketsPurchased):
             tickets = tickets - int(ticketsPurchased)
