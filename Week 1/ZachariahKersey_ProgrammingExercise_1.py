@@ -52,41 +52,41 @@ def processOrder():
 
     Variables:
         tickets (int): The total number of tickets available for sale
-        buyers (int): The number of buyers
+        customers (int): The number of customers
         ticketsPurchased (int): The number of tickets requested for purchase
 
     Logic:
-        1. Initialize tickets for sale and number of buyers.
+        1. Initialize tickets for sale and number of customers.
         2. Print the number of tickets available for purchase upon first run.
         3. Loop through prompting for purchasing tickets until none are left.
         4. Prompt for a number of tickets to purchase.
         5. Validate the request number of tickets across various criteria.
         6. Update the number of tickets remaining.
-        7. Increase the numbers of buyers by 1.
+        7. Increase the numbers of customers by 1.
         8. Print the new number of tickets remaining.
-        9. Upon no tickets remaining, print the total number of buyers.
+        9. Upon no tickets remaining, print the total number of customers.
 
     Return:
         None
     """
-    # Initialize the tickets available for purchase and the number of buyers
+    # Initialize the tickets available for purchase and the number of customers
     tickets = 10
-    buyers = 0
+    customers = 0
     # Print the number of tickets remaining prior to the first run of the loop
     print("Tickets remaining: " + str(tickets))
     # Repeat prompting for the purchase of tickets until none are left for sale
     while tickets > 0:
         ticketsPurchased = input("Enter the number of tickets to purchase: ")
-        # Update the number of tickets and buyers if ticketsPurchased is valid
+        # Update the number of tickets and customers if ticketsPurchased is valid
         if validatePurchase(tickets, ticketsPurchased):
             tickets = tickets - int(ticketsPurchased)
-            buyers += 1
+            customers += 1
             print("Tickets remaining: " + str(tickets) + "\n")
         # Prints the number of tickets remaining if ticketsPurchased is invalid
         else:
             print("Tickets remaining: " + str(tickets) + "\n")
-    # Prints the number of total buyers once no tickets are left for sale
-    print("Total buyers: " + str(buyers))
+    # Prints the number of total customers once no tickets are left for sale
+    print("Total customers: " + str(customers))
 
 # Runs main function if this file is being run directly
 if __name__ == '__main__':
