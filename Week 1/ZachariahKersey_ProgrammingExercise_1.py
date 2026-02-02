@@ -70,7 +70,7 @@ def processOrder():
         None
     """
     # Initialize the tickets available for purchase and the number of buyers
-    tickets = 20
+    tickets = 10
     buyers = 0
     # Print the number of tickets remaining prior to the first run of the loop
     print("Tickets remaining: " + str(tickets))
