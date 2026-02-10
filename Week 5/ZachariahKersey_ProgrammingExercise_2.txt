@@ -1,0 +1,50 @@
+# Technical Design Document: ZachariahKersey_ProgrammingExercise_2
+
+# Name: Zachariah Kersey
+# Date: February 9, 2026
+# Program Description: Determines the spam risk of an email
+
+## Function: analyzeEmail
+Analyzes the words found in the email and generates a spam score.
+
+Parameters:
+    None
+
+Variables:
+    score (int): The spam score.
+    wordsFound (list): A list of spam keywords words found in the email.
+    SPAM_KEYWORDS (list): A list of commonly used spam keywords.
+    email (str): The email's contents inputted by the user.
+
+Logic:
+    1. Receive email's contents from user input.
+    2. Loop over every spam keyword in SPAM_KEYWORDS.
+    3. Increase spam score if current spam keyword is found in the email.
+    4. Append the current spam keyword to the list of found words.
+    5. Return the spam score and list of keywords words found in the email.
+
+Returns:
+    tuple:
+        spamScore (int): The spam score.
+        wordsFound (list): A list of words found in the email.
+
+## Function: analyzeScore
+Analyzes the spam score and displays the risk of the email.
+
+Parameters:
+    score (int): The spam score.
+    found_keywords (list): A list of spam keywords found in the email.
+
+Variables:
+    risk (str): The calculated risk based on the spam score.
+
+Logic:
+    1. Print the calculated spam score.
+    2. Set the risk value based on the spam score.
+    3. Print the risk value.
+    4. Print any spam keywords found in the email or none if none found.
+
+Returns:
+    None
+
+#Link to your repository: https://github.com/Z-Money?tab=repositories
