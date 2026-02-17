@@ -1,0 +1,50 @@
+# Technical Design Document: ZachariahKersey_ProgrammingExercise_3
+
+# Name: Zachariah Kersey
+# Date: February 17, 2026
+# Program Description: Analyzes a list of expenses to find the total, highest, and lowest expenses.
+
+## Function: analyzeExpenses
+Analyzes a list of expenses to find the total, highest, and lowest values.
+
+Parameters:
+    expenses (list): A list of all user expenses.
+
+Variables:
+    total (int): The total expense amount.
+    highest (dict): A dictionary of highest expense type and amount.
+    lowest (dict): A dictionary of lowest expense type and amount.
+
+Logic:
+    1. Calculates the total expense amount.
+    2. Calculates the highest expense type and amount.
+    3. Calculates the lowest expense type and amount.
+    4. Prints the values of the total, highest, and lowest expenses.
+
+Returns:
+    None
+
+## Function: gatherExpenses
+Gathers a list of all user expenses.
+
+Parameters:
+    None
+
+Variables:
+    expenses (list): A list of all user expenses.
+    expenseType (str): The expense type.
+    amount (int): The expense amount.
+    more (str): Determines if the user has additional expenses to record.
+
+Logic:
+    1. Receive an expense type from the user.
+    2. Receive an expense amount from the user.
+    3. Try to convert the expense amount to a float.
+    4. Append the expense type and amount to the list of expenses.
+    5. Prompt the user if they have additional expenses to record.
+    6. Return the list of expenses.
+
+Returns:
+    list: A list of all user expenses.
+
+#Link to your repository: https://github.com/Z-Money?tab=repositories
