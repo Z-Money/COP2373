@@ -1,0 +1,58 @@
+# Technical Design Document: ZachariahKersey_ProgrammingExercise_6
+
+# Name: Zachariah Kersey
+# Date: March 8, 2026
+# Program Description: Validates a user's personal information
+
+## Function: main
+Prompts user from their personal information, then validates it
+
+Parameters:
+     None
+
+Variables:
+    PHONE_NUMBER_REGEX (str): Regular expression to validate the phone number
+    SSN_REGEX (str): Regular expression to validate the SSN
+    ZIP_CODE_REGEX (str): Regular expression to validate the zip code
+    phoneNumber (str): User-inputted phone number
+    ssn (str): User-inputted social security number
+    zipCode (str): User-inputted zip code
+
+Logic:
+    1. Prompt user for phone number, ssn, and zip code
+    2. Print the validity of the user's phone number, ssn, and zip code
+
+## Function: printIfValid
+Evaluates if the provided value is valid or not
+
+Parameters:
+    label (str): Label to check
+    is_valid (bool): True or False based on value's validity
+
+Variables:
+    None
+
+Logic:
+    1. Prints if the label is valid or not based on whether its True/False
+
+Returns:
+    None
+
+## Function: validateValue
+Validate a phone based on its format
+
+Parameters:
+    pattern (regex): Regex to check against the passed value variable
+    value (str): Value to check
+
+Variables:
+    isValid (bool): True or False based on value's validity
+
+Logic:
+    1. Check the provided value against the regex and convert to a boolean
+    2. Return the boolean value
+
+Returns:
+    isValid (bool): True if value matches pattern, False otherwise
+
+#Link to your repository: https://github.com/Z-Money?tab=repositories
