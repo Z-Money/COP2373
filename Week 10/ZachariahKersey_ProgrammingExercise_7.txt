@@ -1,0 +1,40 @@
+# Technical Design Document: ZachariahKersey_ProgrammingExercise_7
+
+# Name: Zachariah Kersey
+# Date: March 20, 2026
+# Program Description: Displays each sentence and number of sentences within a paragraph
+
+## Function: display_sentences
+Validate a phone based on its format
+
+Parameters:
+    matches (list): List of matches from comparing paragraph against regex
+
+Variables:
+    None
+
+Logic:
+    1. Loop over the matches, numbering and printing each sentence
+    2. Prints the total number of sentences found within the paragraph
+
+Returns:
+    None
+
+## Function: find_sentences
+Compares the paragraph to regex pattern to find sentences within it
+
+Parameters:
+    paragraph (str): Paragraph to compare against
+
+Variables:
+    pattern (regex): Regex pattern to compare against
+    matches (list): List of matches from comparing paragraph against regex
+
+Logic:
+    1. Find all sentences in paragraph
+    2. Returns matches
+
+Returns:
+    matches (list): List of matches from comparing paragraph against regex
+
+#Link to your repository: https://github.com/Z-Money?tab=repositories
