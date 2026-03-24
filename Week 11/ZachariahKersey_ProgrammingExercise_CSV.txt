@@ -1,0 +1,65 @@
+# Technical Design Document: ZachariahKersey_ProgrammingExercise_CSV
+
+# Name: Zachariah Kersey
+# Date: March 24, 2026
+# Program Description: Gathers the records of all studentsand saves to a CSV file, then display the values in table
+
+## Function: gatherInputs
+Gather the total number of students, their names and their exam grades
+
+Parameters:
+    None
+
+Variables:
+    students (list): A list of students records
+    numberOfStudents (int): Total number of students to keep records for
+    firstName (str): First name of the student
+    lastName (str): Last name of the student
+    gradeOne(int): First exam grade
+    gradeTwo(int): Second exam grade
+    gradeThree(int): Third exam grade
+
+Logic:
+    1. Gather the number of students to keep records for, handling
+        input errors
+    2. Loop through adding the names and exam grades for the number
+        of students to the student records, handling input errors
+    3. Run the writeToCSV function, passing the list of student records
+
+Returns:
+    None
+
+## Function: readGrades
+Open the grades from a CSV file and display them in a table format
+
+Parameters:
+    None
+
+Variables:
+    reader (list): A list of header row
+
+Logic:
+    1. Open the grades.csv file
+    2. Print the header of the CSV file
+    3. Print all the rows of values from the CSV file
+
+Returns:
+    None
+
+## Function: writeToCSV
+Gather the total number of students, their names and their exam grades
+
+Parameters:
+    students (list): A list of students records
+
+Variables:
+    HEADER (list): A list of header row
+
+Logic:
+    1. Open the grades.csv file
+    2. Write header row and students records to the open grades.csv file
+
+Returns:
+    None
+
+#Link to your repository: https://github.com/Z-Money?tab=repositories
